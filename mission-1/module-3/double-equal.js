@@ -19,9 +19,10 @@ const q = p;
 // console.log(p == q);
 // true, same reference
 
-
-
 // console.log(null == undefined); //true
 // console.log(NaN == NaN) //false
-
 // console.log([] == ''); // true
+
+// triple equal: first compares the data-type; if same, then value
+// console.log(null === undefined) // false
+// console.log([] === '') // false
