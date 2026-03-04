@@ -1,0 +1,20 @@
+{
+  "name": "Kyle",
+  "favNum": 3,
+  "isGamer": true,
+  "hobbies": [
+    "gardening", "bowling"
+  ],
+  "friends": [
+    {
+      "name":"Sam",
+      "favNum": 8,
+      "isGamer": false
+    },
+    {
+      "name": "Pam",
+      "favNum": 7,
+      "isGamer": false
+    }
+  ]
+}
