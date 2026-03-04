@@ -1,4 +1,4 @@
-/**
+/** from:web-dev-simplified
  * Promise(resolve, reject):
  * resolve: when promise's fulfilled
  * reject: when promise's rejected
@@ -21,4 +21,3 @@ p.then((message)=>{
 }).catch((message)=>{
   console.log("this is in catch", message)
 })
-

@@ -1,4 +1,4 @@
-/**from:web-dev-simplified and claudeAI
+/** from:web-dev-simplified and claudeAI
  * JSON: supports string, nums, boolean, obj, array, and null
  *
  * used object/array as top-level
