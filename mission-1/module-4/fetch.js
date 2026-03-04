@@ -13,10 +13,12 @@
 //  //gets the actual data
 // .catch((error) => console.log("Error:", error))
 
+//-------------***-----------------//
+
 fetch("https://jsonplaceholder.typicode.com/users/1")
   .then((res) => res.json())
   .then((user) => {
-    console.log(user.name);
-    console.log(user.email);
+    document.getElementById("name").textContent = user.name;
+    document.getElementById("email").textContent = user.email;
   })
   .catch((error) => console.log("Something went wrong:", error));
