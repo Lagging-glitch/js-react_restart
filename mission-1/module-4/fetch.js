@@ -5,6 +5,7 @@
  * works with browser console, not node
  *
  */
+// basic structure
 
 // fetch("https://jsonplaceholder.typicode.com/posts/3")
 //  //brings the raw data
@@ -22,13 +23,13 @@
 //-------------***-----------------//
 // displaying on page
 
-fetch("https://jsonplaceholder.typicode.com/users/1")
-  .then((res) => res.json())
-  .then((user) => {
-    document.getElementById("name").textContent = user.name;
-    document.getElementById("email").textContent = user.email;
-  })
-  .catch((error) => console.log("Something went wrong:", error));
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//   .then((res) => res.json())
+//   .then((user) => {
+//     document.getElementById("name").textContent = user.name;
+//     document.getElementById("email").textContent = user.email;
+//   })
+//   .catch((error) => console.log("Something went wrong:", error));
 
 //-------------***--------------------//
 //advanced fetch()
@@ -45,9 +46,9 @@ fetch("https://jsonplaceholder.typicode.com/users", {
   .then((res) => {
     if (res.ok) {
       return res.json();
-    //   console.log("Success");
-    // } else {
-    //   console.log("Not Successful");
+      //   console.log("Success");
+      // } else {
+      //   console.log("Not Successful");
     }
   })
   .then((data) => console.log(data))

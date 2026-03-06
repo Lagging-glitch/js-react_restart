@@ -57,4 +57,20 @@ async function doWork() {
     console.log(err);
   }
 }
-doWork(); //works
+// doWork(); //works
+
+//---------------***-------------//
+// rewriting "displaying-on-page" from fetch.js
+
+const getUser = async () => {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    const user = await res.json();
+
+    document.getElementById("name").textContent = user.name;
+    document.getElementById("email").textContent = user.email;
+  } catch (err) {
+    console.log("Error:", err);
+  }
+};
+getUser();
