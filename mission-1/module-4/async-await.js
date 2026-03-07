@@ -60,7 +60,7 @@ async function doWork() {
 // doWork(); //works
 
 //---------------***-------------//
-// rewriting "displaying-on-page" from fetch.js
+// rewriting "displaying-on-page" from fetch.js using arrow function
 
 const getUser = async () => {
   try {
