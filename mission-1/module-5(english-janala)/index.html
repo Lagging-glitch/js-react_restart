@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- Tailwind + daisyUI -->
@@ -32,6 +32,70 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1><i class="fa-solid fa-dna"></i>hello world!</h1>
+    <header>
+      <!-- nav-bar -->
+      <div class="navbar bg-slate-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a href=""><i class="fas fa-question-circle"></i>FAQ</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-book-open"></i>Learn</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="" class="btn btn-ghost text-xl">
+            <span class="text-2xl font-bold">English</span>
+            <img src="/assets/logo.png" alt="" />
+            <span class="font-bangla text-2xl">জানালা</span>
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-3">
+            <li>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fas fa-question-circle"></i>FAQ</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-book-open"></i>Learn</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
