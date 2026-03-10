@@ -8,6 +8,13 @@ const loadTodo = async () => {
     console.log("Error:", error);
   }
 };
+/**
+ * steps of displayData
+ *  1. get the html container
+ *  2. empty said container
+ *  3. forEach loop the array of objects
+ *  4. create element and append
+ */
 const displayTodo = (todos) => {
   const todoContainer = document.getElementById("todo-container");
   todoContainer.innerHTML = "";
